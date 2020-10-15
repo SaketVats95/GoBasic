@@ -12,11 +12,12 @@ func main() {
 	}
 	n1 := 10
 	n2 := 20
-	result := add(n1, n2)
-	fmt.Println("Sum of Two numbers are :", result)
+	result, subs := calc(n1, n2)
+	fmt.Println("Sum of Two numbers are :", result, " # And Differences are :", subs)
 }
 
-func add(num1 int, num2 int) int {
+func calc(num1 int, num2 int) (int, int) {
 	var result = num1 + num2
-	return result
+	var subs = num2 - num1
+	return result, subs
 }
