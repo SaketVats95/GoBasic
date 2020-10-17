@@ -14,6 +14,7 @@ func main() {
 	n2 := 20
 	result, subs := calc(n1, n2)
 	fmt.Println("Sum of Two numbers are :", result, " # And Differences are :", subs)
+
 }
 
 func calc(num1 int, num2 int) (int, int) {
